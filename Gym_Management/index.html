@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GYM MANAGEMENT</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href=" #home" class="logo">Fitvise <span>Fitness</span></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#plans">Pricing</a></li>
+        <li><a href="#review">Review</a></li>
+      </ul>
+      <div class="top-btn">
+        <a href="#" class="nav-btn">Join Us</a>
+      </div>
+    </header>
+
+    <section id="home" class="home">
+      <div class="home-content"  data-aos="zoom-in">
+        <h3>Build Your</h3>
+        <h1>Dream Physique</h1>
+        <h3><span class="multiple-text">BodyBuilding</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+          asperiores quas temporibus vero neque ut, totam, nihil delectus
+          impedit corrupti hic facere quis distinctio officiis recusandae alias,
+          illum sed? Eum.<br />
+          Tempora perferendis nobis aperiam fuga molestias vero voluptate. Ad
+          veritatis cum cumque corporis voluptates, id nihil expedita,
+          exercitationem odio animi odit quae? Similique alias laboriosam
+          tempora molestiae nobis harum explicabo.<br />
+          Perferendis, recusandae quae. Vitae cum distinctio sit quo,
+          praesentium temporibus alias molestias velit fugiat dolores recusandae
+          tempore soluta sapiente aspernatur ipsa deserunt aliquam at nemo
+          ratione.<br />
+        </p>
+        <a href="#" class="btn">Join Us</a>
+      </div>
+      <div class="home-img">
+        <img src="assest/heroImage.png" alt="Home Image" class="photo" />
+      </div>
+    </section>
+
+    <!-- Service Section Code -->
+    <section class="services" id="services">
+      <h2 class="heading" data-aos="zoom-in-down">Our <span>Services</span></h2>
+      <div class="services-content" data-aos="zoom-in-up">
+        <div class="row">
+          <img src="assest/image1.jpg" alt="" />
+          <h4>Physical Fitness</h4>
+        </div>
+        <div class="row">
+          <img src="assest/image2.jpg" alt="" />
+          <h4>Weight Gain</h4>
+        </div>
+        <div class="row">
+          <img src="assest/image3.jpg " alt="" />
+          <h4>Strength Training</h4>
+        </div>
+        <div class="row">
+          <img src="assest/image4.jpg" alt="" />
+          <h4>Fat Loss</h4>
+        </div>
+        <div class="row">
+          <img src="assest/image5.jpg" alt="" />
+          <h4>Weight Lifting</h4>
+        </div>
+        <div class="row">
+          <img src="assest/about.jpg " alt="" />
+          <h4>Cardio</h4>
+        </div>
+      </div>
+    </section>
+    <!-- about section code -->
+    <section class="about" id="about">
+      <div class="about-img" >
+        <img src="assest/about.jpg" alt="" data-aos="zoom-in-down"/>
+      </div>
+      <div class="about-content" data-aos="zoom-in-up" >
+        <h2 class="heading" >Why Choose <span>Us?</span></h2>
+        <div  >
+          <ul class="writing">
+            <li>
+              Our diverse membership base creates a friendly and supportive
+              atmosphere, where you can make friends and stay motivated.
+            </li>
+            <li>Unlock your potential with our expert Personal Trainers.</li>
+            <li>Elevate your fitness with practice sessions.</li>
+            <li>We provide Supportive management, for your fitness success.</li>
+          </ul>
+        </div>
+        <a href="#" class="btn" id="btn" ><b>Book a free class.</b></a>
+      </div>
+    </section>
+    <!-- Pricing Section Code -->
+
+    <section class="plans" id="plans">
+      <h2 class="heading" data-aos="zoom-in-down">Our <span>Plans</span></h2>
+
+      <div class="plans-content" data-aos="zoom-in-up">
+        <div class="box">
+          <h3>BASIC</h3>
+          <h2><span>&#8360 2100/Month</span></h2>
+          <ul>
+            <li>Smart workout plan</li>
+            <li>At home workouts</li>
+          </ul>
+          <a href="#" class="join">
+            Join Now
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+        <div class="box">
+          <h3>PRO</h3>
+          <h2><span>&#8360 4150/Month</span></h2>
+          <ul>
+            <li>Pro GYMS</li>
+            <li>Smart workout plan</li>
+            <li>At home workouts</li>
+          </ul>
+          <a href="#" class="join">
+            Join Now
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+        <div class="box">
+          <h3>PREMIUM</h3>
+          <h2><span>&#8360 6300/Month</span></h2>
+          <ul>
+            <li>ELITE Gyms & Classes</li>
+            <li>Pro GYMS</li>
+            <li>Smart workout plan</li>
+            <li>At home workouts</li>
+            <li>Personal Training</li>
+          </ul>
+          <a href="#" class="join">
+            Join Now
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Modules Section Code -->
+    <section class="modules" id="modules">
+      <h2 class="heading" data-aos="zoom-in-up">Our <span>Modules</span></h2>
+      <div class="modules-content" data-aos="zoom-in-down">
+        <div class="module-group">
+          <h3>Admin</h3>
+          <ul>
+            <li>Login</li>
+            <li>Add Member</li>
+            <li>Update/Delete Members</li>
+            <li>Create Bills</li>
+            <li>Assign Fee Package</li>
+            <li>Assign Notification for Monthly Report Export</li>
+            <li>Supplement Store</li>
+            <li>Diet Details</li>
+          </ul>
+        </div>
+        <div class="module-group">
+          <h3>Members</h3>
+          <ul>
+            <li>Login</li>
+            <li>View Bill Receipts</li>
+            <li>View Bill Notification</li>
+          </ul>
+        </div>
+        <div class="module-group">
+          <h3>User</h3>
+          <ul>
+            <li>Login</li>
+            <li>View Details</li>
+            <li>Search Records</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+ <!-- Review Section -->
+
+ <section id="review" class="review">
+  <div class="review-box">
+      <h2 class="heading" data-aos="zoom-in-down">Client <span>Reviews</span></h2>
+
+      <div class="wrapper" data-aos="zoom-in-up">
+          <div class="review-item">
+              <img src="assest/1.jpg" alt="">
+              <h2>Rohan</h2>
+              <div class="rating">
+                  <i class='bx bxs-star' id="star"></i>
+                  <i class='bx bxs-star' id="star"></i>
+                  <i class='bx bxs-star' id="star"></i>
+                  <i class='bx bxs-star' id="star"></i>
+                  <i class='bx bxs-star' id="star"></i>
+              </div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                  recusandae porro at?</p>
+          </div>
+
+          <div class="review-item">
+              <img src="assest/1.jpg" alt="">
+              <h2>Shakti</h2>
+              <div class="rating">
+                  <i class='bx bxs-star' id="star"></i>
+                  <i class='bx bxs-star' id="star"></i>
+                  <i class='bx bxs-star' id="star"></i>
+                  <i class='bx bxs-star' id="star"></i>
+              </div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                  recusandae porro at?</p>
+          </div>
+
+          <div class="review-item">
+              <img src="assest/1.jpg" alt="">
+              <h2>Navdeep</h2>
+              <div class="rating">
+                  <i class='bx bxs-star' id="star"></i>
+                  <i class='bx bxs-star' id="star"></i>
+                  <i class='bx bxs-star' id="star"></i>
+                  <i class='bx bxs-star' id="star"></i>
+                  <i class='bx bxs-star' id="star"></i>
+              </div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                  recusandae porro at?</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!-- Footer Section -->
+
+  <footer class="footer">
+    <div class="social">
+        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="#"><i class='bx bxl-facebook-square'></i></a>
+        <a href="https://www.linkedin.com/in/nav-s-302118299/"><i class='bx bxl-linkedin-square'></i></a>
+    </div>
+
+    <p class="copyright">
+        &copy; Fitvise Fitness 2024 - All Rights Reserved(Navdeep Singh Bhangu)
+    </p>
+</footer>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <!-- Firebase Initialization -->
+     <script type="module">
+      // Import Firebase modules
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js";
+      
+      // Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyD8P6UirZSa8QhdNv3VnvC7F9laBGkWY4o",
+        authDomain: "gym-management-app-4bf55.firebaseapp.com",
+        projectId: "gym-management-app-4bf55",
+        storageBucket: "gym-management-app-4bf55.appspot.com",
+        messagingSenderId: "700125231798",
+        appId: "1:700125231798:web:4ea7ecf0f01dc9e72b4417",
+        measurementId: "G-VGWP4RHTT5"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
